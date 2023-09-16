@@ -124,8 +124,8 @@
 }
 
 .card {
-  width: 500px;
-  height: 254px;
+  width: 700px;
+  height: 400px;
   transition: all 0.2s;
   position: relative;
   cursor: pointer;
@@ -196,8 +196,8 @@
   justify-content: space-around;
   flex-direction: row;
   /* background-color: rebeccapurple; */
-  margin-top: 80px;
-  gap: 80px;
+  margin-top: 0px;
+  gap: 40px;
   flex-wrap: wrap;
   width: 50%;
   padding: 100px;
@@ -208,10 +208,16 @@
   background-color: #aed2ff;
   padding: 40px;
   border-radius: 12px;
-  background: linear-gradient(45deg, #e6e6e6, #ffffff);
-  box-shadow: 50px -50px 51px #c7c7c7, -50px 50px 51px #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   font-weight: 800;
   font-size: 18px;
+  transition: 0.4s ease;
+}
+.project-card:hover {
+  background-color: #53ef7d;
 }
 
 .section-four {
