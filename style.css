@@ -109,7 +109,15 @@
   filter: none;
   /* animation: App-logo-spin infinite 100s linear; */
 }
-
+.project-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 2s ease-in-out;
+  /* animation: App-logo-spin 3s ease; */
+}
 /* cards 3d */
 .projects {
   display: flex;
@@ -204,7 +212,7 @@
 }
 .project-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: #aed2ff;
   padding: 40px;
   border-radius: 12px;
@@ -215,9 +223,14 @@
   font-weight: 800;
   font-size: 18px;
   transition: 0.4s ease;
+  gap:20px ;
 }
 .project-card:hover {
-  background-color: #53ef7d;
+  /* background-color: #53ef7d; */
+}
+.info{
+  display:flex;
+  flex-direction: column;
 }
 
 .section-four {
