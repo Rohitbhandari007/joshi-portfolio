@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&family=Roboto:ital,wght@0,900;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,17 +15,31 @@
   width: 100%;
   /* background-color: #e4f1ff; */
 }
+
 .section-one {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  padding: 20px;
   gap: 80px;
   height: 100vh;
+}
+.joshi {
+  font-family: "Roboto", sans-serif;
+  color: #53ef7d;
+  font-size: 44px;
+  font-weight: 800;
+}
+.joshi-small {
+  font-family: "Poppins", sans-serif;
+  color: #53ef7d;
+  font-size: 24px;
+  font-weight: 800;
 }
 .landing-card {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   flex-direction: column-reverse;
   border-radius: 10px;
   color: #fff;
@@ -37,11 +52,62 @@
   font-size: 24px;
   color: #000;
 }
+
+@keyframes App-logo-spin {
+  0% {
+    transform: rotate(-45deg);
+    filter: grayscale(100%);
+  }
+  /* 10% {
+    transform: rotate(-60deg);
+    filter: grayscale(90%);
+  }
+  20% {
+    transform: rotate(-20deg);
+    filter: grayscale(60%);
+  }
+  30% {
+    transform: rotate(-15deg);
+    filter: grayscale(50%);
+  }
+  40% {
+    transform: rotate(-10deg);
+    filter: grayscale(10%);
+  } */
+
+  100% {
+    transform: rotate(0deg);
+    filter: grayscale(0%);
+  }
+  /* 70% {
+    transform: rotate(-5deg);
+    filter: grayscale(0%);
+  } */
+  /* 80% {
+    transform: rotate(-60deg);
+    filter: grayscale(0%);
+  }
+  90% {
+    transform: rotate(-360deg);
+    filter: grayscale(0%);
+  } */
+  /* 100% {
+    transform: rotate(-60deg);
+    filter: grayscale(0%);
+  } */
+}
 .main-img {
   width: 350px;
   height: 350px;
   object-fit: cover;
   border-radius: 50%;
+  cursor: pointer;
+  transition: 2s ease-in-out;
+  animation: App-logo-spin 3s ease;
+}
+.main-img:hover {
+  filter: none;
+  /* animation: App-logo-spin infinite 100s linear; */
 }
 
 /* cards 3d */
@@ -144,16 +210,51 @@
   border-radius: 12px;
   background: linear-gradient(45deg, #e6e6e6, #ffffff);
   box-shadow: 50px -50px 51px #c7c7c7, -50px 50px 51px #ffffff;
-  font-weight: 500;
+  font-weight: 800;
+  font-size: 18px;
 }
 
 .section-four {
   display: flex;
-  height: 50vh;
+  /* height: 50vh; */
   flex-direction: column;
+  align-items: center;
 }
 .links {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+.link {
+  padding: 20px;
+  color: #000;
+}
+.link:hover {
+  color: #53ef7d;
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    width: 100%;
+  }
+  .tagline {
+    font-size: 14px;
+    text-align: center;
+  }
+  .joshi {
+    font-size: 24px;
+  }
+  .section-three {
+    margin-top: 2px;
+  }
+  .section-one {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 40px;
+  }
+  .main-img {
+    width: 250px;
+    height: 250px;
+    /* width: 100%; */
+  }
 }
