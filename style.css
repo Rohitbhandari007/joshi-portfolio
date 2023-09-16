@@ -234,6 +234,12 @@
 }
 
 @media only screen and (max-width: 700px) {
+  .main-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+  }
   .card {
     width: 100%;
   }
@@ -250,11 +256,17 @@
   .section-one {
     flex-direction: column-reverse;
     justify-content: center;
-    padding: 40px;
+    padding: 0px;
+    gap: 20px;
+    width: 100vw;
   }
   .main-img {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     /* width: 100%; */
+  }
+  .circle {
+    width: 50px;
+    height: 50px;
   }
 }
