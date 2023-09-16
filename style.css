@@ -38,8 +38,8 @@
   color: #000;
 }
 .main-img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -128,7 +128,32 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 80px;
-  height: 100vh;
+  flex-direction: row;
   /* background-color: rebeccapurple; */
+  margin-top: 80px;
+  gap: 80px;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 100px;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #aed2ff;
+  padding: 40px;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #e6e6e6, #ffffff);
+  box-shadow: 50px -50px 51px #c7c7c7, -50px 50px 51px #ffffff;
+  font-weight: 500;
+}
+
+.section-four {
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
